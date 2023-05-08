@@ -134,9 +134,10 @@ for filename in os.listdir(i_path):
         
         # Set threshold for object area
         min_area = 500
+        max_area = 1200
         
         # Create directory to save cropped images
-        output_dir = o_path+"cropped_objects"
+        output_dir = o_path+"Cropped_objects"
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
         
@@ -146,6 +147,8 @@ for filename in os.listdir(i_path):
             # Get statistics for object i
             area = stats[i, cv2.CC_STAT_AREA]
             if area < min_area:
+                labels[labels == i] = 0
+            elif area > miax_area:
                 labels[labels == i] = 0
             else:
                 bounding_box_x = stats[i, cv2.CC_STAT_LEFT]
@@ -176,6 +179,8 @@ for filename in os.listdir(i_path):
             # Get statistics for object i
             area = stats[i, cv2.CC_STAT_AREA]
             if area < min_area:
+                labels[labels == i] = 0
+            elif area > miax_area:
                 labels[labels == i] = 0
             else:
                 bounding_box_x = stats[i, cv2.CC_STAT_LEFT]
