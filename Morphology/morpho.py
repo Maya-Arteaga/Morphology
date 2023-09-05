@@ -69,8 +69,42 @@ def padding(image_path, padding_rows, padding_cols):
     print("Padding added successfully.")
     return padded_image
 
+def find_contours(image):
+    image = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
 
+    contours, _ = cv2.findContours(image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    return contours
 
+def polygon(image):
+    # Find the contours in the binary image
+    contours, _ = cv2.findContours(image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    # Approximate the contours to reduce points
+    epsilon = 0.02 * cv2.arcLength(contours[0], True)
+    approx = cv2.approxPolyDP(contours[0], epsilon, True)
+
+    # Create a convex hull around the approximated contour
+    hull = cv2.convexHull(approx)
+
+    # Create a blank image
+    polygon_image = np.zeros_like(image, dtype=np.uint8)
+
+    # Draw the convex hull on the blank image
+    cv2.fillPoly(polygon_image, [hull], (255))
+
+    return polygon_image
+
+def calculate_area(image):
+    # Read the  image
+    image = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
+
+    # Apply thresholding to convert to binary image
+    _, thresholded_image = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY)
+
+    # Count the white pixels (foreground)
+    area = cv2.countNonZero(thresholded_image)
+
+    return area
 
 
 from scipy.ndimage import label, generate_binary_structure
@@ -119,11 +153,16 @@ def detect_and_color(image):
                     colored_image[i-1, j-1] = (255, 0, 0)  # Red - Blue (tif)
                 elif value >= 3:
                     colored_image[i-1, j-1] = (0, 255, 0)  # Green - Green (tif)
+            
 
     # Converting to RGB
     colored_image = cv2.cvtColor(colored_image, cv2.COLOR_BGR2RGB)
 
     return M, colored_image
+
+
+
+
 
 def count_branches(image):
     image= image/255
@@ -169,4 +208,43 @@ def count(image):
     return num_objects
 
 
+def detect_features(image, soma_image):
+    
+    kernel = np.ones((3,3),np.uint8)
+    soma_image = cv2.dilate(soma_image, kernel, iterations=1)
+    # Padding
+    img_padded = np.pad(image, 1)
+
+    # Detect columns and rows
+    n_row = np.shape(img_padded)[0]
+    n_col = np.shape(img_padded)[1]
+
+    # Empty matrix
+    M = np.zeros((n_row - 2, n_col - 2), dtype=np.int8)
+
+    # Create an empty colored image
+    colored_image = np.zeros((M.shape[0], M.shape[1], 3), dtype=np.uint8)
+
+    # Detect neighbors and assign colors
+    for i in range(1, n_row):
+        for j in range(1, n_col):
+            if img_padded[i, j] != 0:
+                M[i-1, j-1] = np.count_nonzero(img_padded[i-1:i+2, j-1:j+2]) - 1  # matriz 3x3
+
+                value = M[i-1, j-1]
+                if value == 1:
+                    colored_image[i-1, j-1] = (0, 0, 255)  # Blue - Red (tif)
+                elif value == 2:
+                    colored_image[i-1, j-1] = (255, 0, 0)  # Red - Blue (tif)
+                elif value >= 3:
+                    colored_image[i-1, j-1] = (0, 255, 0)  # Green - Green (tif)
+
+    # Converting to RGB
+    colored_image = cv2.cvtColor(colored_image, cv2.COLOR_BGR2RGB)
+
+    # Identify initial points in contact with soma
+    initial_points = cv2.bitwise_and(image, soma_image)
+    colored_image[initial_points > 0] = (125, 0, 125)  # Purple - Purple (tif)
+
+    return M, colored_image
 
