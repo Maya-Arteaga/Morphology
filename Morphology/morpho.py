@@ -244,7 +244,7 @@ def detect_features(image, soma_image):
 
     # Identify initial points in contact with soma
     initial_points = cv2.bitwise_and(image, soma_image)
-    colored_image[initial_points > 0] = (125, 0, 125)  # Purple - Purple (tif)
+    colored_image[initial_points > 0] = (200, 200, 0)  # Yellow (tif)
 
     return M, colored_image
 
