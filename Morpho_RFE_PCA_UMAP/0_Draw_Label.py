@@ -28,7 +28,8 @@ def draw_circle(event, x, y, flags, param):
 
 if __name__ == "__main__":
     # Select the directory which contains the images to be analyzed
-    root_path = filedialog.askdirectory()
+    #root_path = filedialog.askdirectory()
+    root_path = "/Users/juanpablomayaarteaga/Desktop/Hilus/N/"
     o_path = set_path(os.path.join(root_path, "Edited_images"))
 
     for filename in os.listdir(root_path):
@@ -45,6 +46,7 @@ if __name__ == "__main__":
         # Read the file
         input_file = os.path.join(root_path, filename)
         image = cv2.imread(input_file, cv2.IMREAD_GRAYSCALE)
+        #image = cv2.bitwise_not(image)
 
         if image is None:
             print("Error: Unable to load the image.")
@@ -73,7 +75,7 @@ if __name__ == "__main__":
         # LABEL OBJECTS
         # Draw rectangles and save labeled images
         num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(image, connectivity=4)
-        min_area = 2000
+        min_area = 200
         max_area = 2400000
         labeled_cells = 0
         color_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)

@@ -22,7 +22,10 @@ import matplotlib.pyplot as plt
 #from skimage import restoration
 #import re
 from scipy.spatial import distance
+import time
 
+# Record start time
+start_time = time.time()
 
 
 
@@ -36,10 +39,10 @@ ID_path= set_path(o_path+"ID/")
 
 #VARIABLES
 
-subject = ["R1", "R2"]
-group = ["CNEURO1", "VEH"]
+subject = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10"]
+group = ["CNEURO1", "VEH", "CNEURO-01"]
 treatmeant = ["ESC", "SS"]
-tissue = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9"]
+tissue = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10"]
 
 
 
@@ -1258,6 +1261,19 @@ for s in subject:
                     print(f"DATAFRAME SAVED AS CSV AT: {csv_name}")
                     print ("...")
                     print ("...")
+                    
+
+
+
+# Record end time
+end_time = time.time()
+
+# Calculate and print the elapsed time
+elapsed_time = end_time - start_time
+print(f"Elapsed Time: {elapsed_time} seconds")
+
+
+
 
 
 

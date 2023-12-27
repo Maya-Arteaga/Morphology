@@ -15,22 +15,23 @@ import matplotlib.pyplot as plt
 from morpho import set_path, gammaCorrection
 
 
-n_neighbors=15
+n_neighbors=10
 
 
 i_path = "/Users/juanpablomayaarteaga/Desktop/Hilus/Prepro/"
 o_path = os.path.join(i_path, "Output_images/")
-ID_path= set_path(o_path+f"ID_clusters_PCA_UMAP_{n_neighbors}/")
+ID_path= set_path(o_path+f"ID_clusters_UMAP_{n_neighbors}/")
 
 i_original_path = "/Users/juanpablomayaarteaga/Desktop/Hilus/"
 
 
 
 
-subject = ["R1", "R2"]
-group = ["CNEURO1", "VEH"]
+
+subject = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10"]
+group = ["CNEURO1", "VEH", "CNEURO-01"]
 treatment = ["ESC", "SS"]
-tissue = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9"]
+tissue = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10"]
 
 df_color_position = pd.DataFrame(columns=["Cell", "Cluster_Labels", "x1", "y1", "x2", "y2"])
 
@@ -117,14 +118,37 @@ for s in subject:
                                             }
                                             """
                                             #Colors according to plot  BGR format
+                                            """
                                             cluster_colors = {
-                                                3: (0, 0, 255),
-                                                1: (200, 200, 0),   # 
-                                                0: (0, 200, 0),
-                                                2: (200, 0, 200),   # 
-                                                4: (255, 255, 255),    #
-                                                5: (0, 0, 125),
-                                                -1: (125, 125, 125)
+                                               -1: (255, 255, 255), #White
+                                               0: (0, 0, 255),      #Red
+                                               2: (0, 100, 255),    #Orange
+                                               3: (0, 200, 200),    #Yellow
+                                               4: (200, 200, 0),    #cyan
+                                               5: (0, 255, 0),      #green
+                                               1: (200, 0, 200)     #Purple
+
+                                               
+                                            }
+                                            
+                                            Teal: BGR(128, 128, 0)
+                                            MediumTurquoise: BGR(209, 206, 0)
+                                            PaleTurquoise: BGR(238, 238, 175)
+                                            Pink: BGR(192, 182, 255)
+                                            OrangeRed: BGR(0, 69, 255)
+                                            Crimson: BGR(60, 20, 220)
+                                            """
+                                            cluster_colors = {
+                                               -1: (255, 255, 255), #White
+                                               1: (0, 0, 255),      #Red
+                                               0: (0, 100, 255),    #Orange
+                                               3: (0, 255, 0),    # green
+                                               4: (245, 245, 190),   #palecyan
+                                               5: (220, 220, 0),      # cyan
+                                               #5: (87, 139, 46),
+                                               2: (0, 200, 200)     #yellow
+
+                                               
                                             }
                                             
                                             
@@ -283,7 +307,7 @@ for s in subject:
                                         cv2.putText(empty_image, str(cell_number), (text_x, text_y), font, font_scale, font_color, font_thickness)
                             
                             # Save the resulting image
-                            cluster_image_path = os.path.join(ID_path, f"{s}_{g}_{tr}_{ti}_CA1_Clustered_PCA_UMAP.tif")
+                            cluster_image_path = os.path.join(ID_path, f"{s}_{g}_{tr}_{ti}_CA1_Clustered_UMAP.tif")
                             cv2.imwrite(cluster_image_path, empty_image)
 
                                     
