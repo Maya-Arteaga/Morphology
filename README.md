@@ -42,6 +42,10 @@ From the complete binary photomicrographs, each cell was identified. Subsequentl
 
 
 
+![Uploading Figure_morphometrics_analysis.png…]()
+
+
+
 Feature Selection
 
 As not all calculated variables are helpful and many might introduce noise (from less important features) or lead to collinearity, and too few features might fail to capture the complexity of microglial morphology, special feature selection techniques were employed to choose the most important characteristics. This approach also enhances the robustness of our model, as different features are selected based on the specificities of each study. The Recursive Feature Elimination (RFE) algorithm was chosen for this purpose. RFE systematically eliminates a set of features at a time using cross-validation. This approach allowed us to utilize variables that best highlighted the differences between the study groups. The scikit-learn package (https://scikit-learn.org/) was used for implementation.
