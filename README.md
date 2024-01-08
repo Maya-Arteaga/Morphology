@@ -65,8 +65,7 @@ Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with
 
 ![Histogram_Clusters_10_0 01_order](https://github.com/Maya-Arteaga/Morphology/assets/70504322/0d680224-681e-4e12-b9ed-d03076d19c85)
 
-![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/1c642760-efd1-495c-8d06-28a3da8ce384)
-
+![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/5641aba8-031c-49ac-8915-a2a0c6e28c61)
 
 
 Spatial Visualization
