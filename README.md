@@ -1,5 +1,4 @@
-Morphometrics
-
+                                              Morphometrics
 
 Since its discovery, microglia has intrigued researchers with its ability to respond to external stimuli, addapting its morphology, 
 migrating and accumulating at lesion sites (Del Rio-Hortega, 1932). Microglia is a highly dynamic cell involved in highly complex 
