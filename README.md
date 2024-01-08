@@ -1,3 +1,5 @@
+Morphometrics
+
 Since its discovery, microglia has intrigued researchers with its ability to respond to external stimuli, addapting its morphology, 
 migrating and accumulating at lesion sites (Del Rio-Hortega, 1932). Microglia is a highly dynamic cell involved in highly complex 
 homeostatic processes (Sierra et al., 2014; Lier, J. 2020; McNamara et al., 2023). This heterogeneity gives microglia great sensitivity
