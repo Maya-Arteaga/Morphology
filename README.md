@@ -1,5 +1,6 @@
                                               Morphometrics
-![Figure](https://github.com/Maya-Arteaga/Morphology/assets/70504322/03dedf2c-6006-4e3f-9c8e-bb2cae07be6f)
+
+![Figure2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/26a03a77-3d83-43c2-a3d1-0cd5c36abbeb)
 
 
 Introduction 
