@@ -65,6 +65,12 @@ Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with
 
 ![Histogram_Clusters_10_0 01_order](https://github.com/Maya-Arteaga/Morphology/assets/70504322/0d680224-681e-4e12-b9ed-d03076d19c85)
 
+VEH SS: Saline solution as vehicle
+ESC: Scopolamine (toxin)
+CNEURO 0.1: Treatment at dosage 0.1
+CNEURO 1.0: Treatment at dosage 1.0
+CNEURO SS: Treatment for the control group
+
 ![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/5641aba8-031c-49ac-8915-a2a0c6e28c61)
 
 
