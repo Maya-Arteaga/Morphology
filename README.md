@@ -47,6 +47,9 @@ Feature Selection
 As not all calculated variables are helpful and many might introduce noise (from less important features) or lead to collinearity, and too few features might fail to capture the complexity of microglial morphology, special feature selection techniques were employed to choose the most important characteristics. This approach also enhances the robustness of our model, as different features are selected based on the specificities of each study. The Recursive Feature Elimination (RFE) algorithm was chosen for this purpose. RFE systematically eliminates a set of features at a time using cross-validation. This approach allowed us to utilize variables that best highlighted the differences between the study groups. The scikit-learn package (https://scikit-learn.org/) was used for implementation.
 
 
+![Figure_RFE](https://github.com/Maya-Arteaga/Morphology/assets/70504322/c50ff3f4-bd54-42e9-b8a5-cdf13ba0bafe)
+
+
 
 Dimensionality Reduction and Clustering
 
@@ -55,6 +58,12 @@ Uniform Manifold Approximation and Projection (UMAP) serves as a dimension reduc
 Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) was employed for clustering purposes. HDBSCAN utilizes a density-based approach, making minimal implicit assumptions about the clusters. This non-parametric method seeks a cluster hierarchy shaped by the multivariate modes of the underlying distribution. The approach involves transforming the space based on density, constructing the cluster hierarchy, and extracting the clusters. Notably, it accounts for data noise, making HDBSCAN more robust to noise and outliers by excluding data that is not near the densities from the clusters (https://github.com/scikit-learn-contrib/hdbscan).
 
 ![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
+
+![Histogram_Clusters_10_0 01_order](https://github.com/Maya-Arteaga/Morphology/assets/70504322/0d680224-681e-4e12-b9ed-d03076d19c85)
+
+![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/1c642760-efd1-495c-8d06-28a3da8ce384)
+
+
 
 Spatial Visualization
 
