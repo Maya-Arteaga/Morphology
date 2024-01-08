@@ -34,6 +34,18 @@ analysis and using data analysis techniques, the selection of features that best
 the intricacy of their morphologies while categorizing them in a simple and unbiased manner.
 
 
+Feature Selection
+
+As not all calculated variables are helpful and many might introduce noise (from less important features) or lead to collinearity, and too few features might fail to capture the complexity of microglial morphology, special feature selection techniques were employed to choose the most important characteristics. This approach also enhances the robustness of our model, as different features are selected based on the specificities of each study. The Recursive Feature Elimination (RFE) algorithm was chosen for this purpose. RFE systematically eliminates a set of features at a time using cross-validation. This approach allowed us to utilize variables that best highlighted the differences between the study groups. The scikit-learn package (https://scikit-learn.org/) was used for implementation.
+
+
+Dimensionality Reduction and Clustering
+Uniform Manifold Approximation and Projection (UMAP) serves as a dimension reduction technique designed for general non-linear dimensionality reduction while preserving both local and global structures. The algorithm assumes that the data is uniformly distributed on a Riemannian manifold, where the Riemannian metric is locally constant, and the manifold is locally connected (https://github.com/lmcinnes/umap/). Note that various hyperparameters (n_neighbors and min_dist) were experimented with, and yet the resulting structure remained robust.
+
+Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) was employed for clustering purposes. HDBSCAN utilizes a density-based approach, making minimal implicit assumptions about the clusters. This non-parametric method seeks a cluster hierarchy shaped by the multivariate modes of the underlying distribution. The approach involves transforming the space based on density, constructing the cluster hierarchy, and extracting the clusters. Notably, it accounts for data noise, making HDBSCAN more robust to noise and outliers by excluding data that is not near the densities from the clusters (https://github.com/scikit-learn-contrib/hdbscan).
+![image](https://github.com/Maya-Arteaga/Morphology/assets/70504322/b8354d62-8a13-4fdc-9963-385fe5c1d310)
+
+
 
 
 Juan Pablo Maya Arteaga
