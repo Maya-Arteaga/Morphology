@@ -1,6 +1,6 @@
                                               Morphometrics
+![Figure](https://github.com/Maya-Arteaga/Morphology/assets/70504322/82a53a2e-3ae4-4a87-a42a-d82425584757)
 
-![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
 Introduction 
 
@@ -49,6 +49,7 @@ Uniform Manifold Approximation and Projection (UMAP) serves as a dimension reduc
 Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) was employed for clustering purposes. HDBSCAN utilizes a density-based approach, making minimal implicit assumptions about the clusters. This non-parametric method seeks a cluster hierarchy shaped by the multivariate modes of the underlying distribution. The approach involves transforming the space based on density, constructing the cluster hierarchy, and extracting the clusters. Notably, it accounts for data noise, making HDBSCAN more robust to noise and outliers by excluding data that is not near the densities from the clusters (https://github.com/scikit-learn-contrib/hdbscan).
 ![image](https://github.com/Maya-Arteaga/Morphology/assets/70504322/b8354d62-8a13-4fdc-9963-385fe5c1d310)
 
+![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
 
 
