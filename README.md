@@ -2,6 +2,7 @@
 
 ![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
+Introduction 
 
 Since its discovery, microglia has intrigued researchers with its ability to respond to external stimuli, addapting its morphology, 
 migrating and accumulating at lesion sites (Del Rio-Hortega, 1932). Microglia is a highly dynamic cell involved in highly complex 
