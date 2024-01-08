@@ -73,7 +73,7 @@ CNEURO 0.1: Treatment at dosage 0.1
 
 CNEURO 1.0: Treatment at dosage 1.0
 
-CNEURO SS: Treatment for the control group
+CNEURO SS: Treatment in a control group
 
 ![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/5641aba8-031c-49ac-8915-a2a0c6e28c61)
 
