@@ -1,5 +1,8 @@
                                               Morphometrics
 
+![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
+
+
 Since its discovery, microglia has intrigued researchers with its ability to respond to external stimuli, addapting its morphology, 
 migrating and accumulating at lesion sites (Del Rio-Hortega, 1932). Microglia is a highly dynamic cell involved in highly complex 
 homeostatic processes (Sierra et al., 2014; Lier, J. 2020; McNamara et al., 2023). This heterogeneity gives microglia great sensitivity
@@ -31,7 +34,6 @@ four main methods of microglial analysis and using data analysis techniques, all
 study groups.
 
 
-![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
 
 Juan Pablo Maya Arteaga
