@@ -35,6 +35,10 @@ becomes a challenge. Considering the high biological heterogeneity, we have deve
 analysis and using data analysis techniques, the selection of features that best highlight differences between study groups. This approach aims to showcase
 the intricacy of their morphologies while categorizing them in a simple and unbiased manner.
 
+Analysis of morphometrics features
+
+From the complete binary photomicrographs, each cell was identified. Subsequently, classic morphometric features were calculated. For Skeleton analysis, the following measures were computed: total length of branches (in pixels), number of initial points (also known as cell processes, processes that emerge from the cell soma), number of junction points (points where branches subdivide), and number of endpoints (end points of branches). Cell body analysis yielded the calculation of area, perimeter, circularity (where 1 represents a perfect circle), Feret diameter (maximum caliper diameter, the longest distance between any two points along the object boundary), compactness (how closely an object packs its mass or area into a given space: area/perimeter), aspect ratio (width/height), orientation (angle in degrees), and eccentricity (major axis/minor axis). These same features were calculated for the entire cell (not just the cell soma or the cell skeleton). Fractal analysis involved calculating convex hulls (the smallest convex set of pixels that encloses a cell), and the same calculations performed in cell body analysis were applied. Sholl analysis included determining the number of Sholl circles (a circle circumscribing the cell was calculated, and circles with increasing radii were created with the centroid of the cell soma as the center), crossing processes (the number of times cell processes intersect the Sholl circles), and the max distance (the maximum distance between the centroid and the four vertices of the image).
+
 
 
 Feature Selection
