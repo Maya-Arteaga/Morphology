@@ -27,11 +27,11 @@ has been reported using full photomicrograph analysis than in single-cell analys
 the use of full photomicrograph analysis is desirable for its fleetness, it is avoided due to its statistical consequences (Green, 2022). 
 Conversely, single-cell analysis is more labor-intensive but statistically shows greater differences, making it more commonly employed (Green, 2022).
 
-To capture the complexity of microglial morphology, it is necessary to use the fewest variables that provide the most information possible 
-(Siegert, 2022). However, due to the heterogeneity of microglia and the particularity of each study, selecting features that best profile microglia
-for each situation becomes a challenge. Thus, considering the high biological heterogeneity, we have developed a pipeline that, based on the 
-four main methods of microglial analysis and using data analysis techniques, allows the selection of features that best profile differences between 
-study groups.
+To capture the complexity of microglial morphology, it's essential to use the fewest variables that provide the maximum amount of information possible 
+(Siegart, 2022). However, due to the heterogeneity of microglia and each study, selecting features that best characterize microglia for each situation 
+becomes a challenge. Considering the high biological heterogeneity, we have developed a pipeline that allows, based on the four main methods of microglial 
+analysis and using data analysis techniques, the selection of features that best highlight differences between study groups. This approach aims to showcase
+the intricacy of their morphologies while categorizing them in a simple and unbiased manner.
 
 
 
