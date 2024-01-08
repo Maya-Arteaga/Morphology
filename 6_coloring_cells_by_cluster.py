@@ -231,7 +231,7 @@ for s in subject:
                                         
                                         
                                         """
-                                        # Read the colored image
+                                        
                                         colored_image = cv2.imread(input_image, cv2.IMREAD_UNCHANGED)
                                         #empty_image = np.zeros((height, width, 4), np.uint8)
                                         #empty_image[:, :, 3] = 255
