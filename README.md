@@ -29,7 +29,7 @@ the use of full photomicrograph analysis is desirable for its fleetness, it is a
 Conversely, single-cell analysis is more labor-intensive but statistically shows greater differences, making it more commonly employed (Green, 2022).
 
 To capture the complexity of microglial morphology, it's essential to use the fewest variables that provide the maximum amount of information possible 
-(Siegart, 2022). However, due to the heterogeneity of microglia and each study, selecting features that best characterize microglia for each situation 
+(Siegart, 2022). However, due to the heterogeneity of microglia and the particularities of each study, selecting features that best characterize microglia for each situation 
 becomes a challenge. Considering the high biological heterogeneity, we have developed a pipeline that allows, based on the four main methods of microglial 
 analysis and using data analysis techniques, the selection of features that best highlight differences between study groups. This approach aims to showcase
 the intricacy of their morphologies while categorizing them in a simple and unbiased manner.
@@ -64,6 +64,8 @@ Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with
 ![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
 ![Histogram_Clusters_10_0 01_order](https://github.com/Maya-Arteaga/Morphology/assets/70504322/0d680224-681e-4e12-b9ed-d03076d19c85)
+
+In this case, we are dealing with five groups:
 
 VEH SS: Saline solution as vehicle
 
