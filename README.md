@@ -30,4 +30,4 @@ for each situation becomes a challenge. Thus, considering the high biological he
 four main methods of microglial analysis and using data analysis techniques, allows the selection of features that best profile differences between 
 study groups.
 
-Juan Pablo Maya
+Juan Pablo Maya Arteaga
