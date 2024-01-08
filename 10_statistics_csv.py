@@ -68,13 +68,6 @@ for variable in variables:
     }, ignore_index=True)
 
 
-"""
-# Highlight values less than 0.01 in red
-styled_result_df = result_df.style.applymap(lambda x: 'color: red' if isinstance(x, (float, int)) and float(x) < 0.01 else '')
-
-
-styled_result_df.to_html('styled_result.html')
-"""
 
 
 import os
