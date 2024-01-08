@@ -56,6 +56,13 @@ Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with
 
 ![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
 
+Spatial Visualization
+
+As each data point corresponds to a cell, following Dimensionality Reduction and Clustering, each cell was color-coded based on its cluster. This approach serves two main purposes: 1)It facilitates the confirmation of similarities among cells belonging to the same cluster in a practical manner; 2) It provides information about the spatial distribution of each clustered cell. This aspect could be particularly beneficial for conducting further spatial analyses while considering other structures, potentially unveiling previously unexplored patterns in the physiopathology of diseases.
+
+
+
+![Figure_Spatial_Visualization](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ffa50504-7b4d-451d-b38c-6c75bfdea2a4)
 
 
 Juan Pablo Maya Arteaga
