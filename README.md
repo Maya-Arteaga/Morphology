@@ -17,8 +17,7 @@ precise quantification of microglia is needed to capture the variability in its 
 (Green, 2022; Reddaway, 2023).
 
 Detecting subtle changes in microglial morphology throughout the spectrum would provide an early indication of its immediate responses to
-local environmental signals, given its irritability to microenvironment cues (Stratoulias, 2019; Siegert, 2022). However, most 
-analyses have been restricted in terms of the number or type of features used in their analyses. The most widely used methods for analyzing
+local environmental signals, given its irritability to microenvironment cues (Stratoulias, 2019; Siegert, 2022). Despite this, the majority of analyses concentrate solely on specific features of microglia, without addressing all of its characteristics. The most widely used methods for analyzing
 microglial morphology are: 1) Fractal analysis; 2) Skeleton analysis; 3) Cell body area and perimeter; and 4) Sholl analysis (Green, 2022).
 
 Furthermore, biases in effect size can occur due to the selection of cells within the chosen sample (single-cell analysis vs. full photomicrograph
