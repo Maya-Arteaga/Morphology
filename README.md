@@ -58,6 +58,9 @@ Dimensionality Reduction and Clustering
 
 Uniform Manifold Approximation and Projection (UMAP) serves as a dimension reduction technique designed for general non-linear dimensionality reduction while preserving both local and global structures. The algorithm assumes that the data is uniformly distributed on a Riemannian manifold, where the Riemannian metric is locally constant, and the manifold is locally connected (https://github.com/lmcinnes/umap/). Note that various hyperparameters (n_neighbors and min_dist) were experimented with, and yet the resulting structure remained robust.
 
+![Figure_UMAP_trials](https://github.com/Maya-Arteaga/Morphology/assets/70504322/4dac335a-7a1a-4fbc-804b-950ec96b4eb9)
+
+
 Subsequently, Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) was employed for clustering purposes. HDBSCAN utilizes a density-based approach, making minimal implicit assumptions about the clusters. This non-parametric method seeks a cluster hierarchy shaped by the multivariate modes of the underlying distribution. The approach involves transforming the space based on density, constructing the cluster hierarchy, and extracting the clusters. Notably, it accounts for data noise, making HDBSCAN more robust to noise and outliers by excluding data that is not near the densities from the clusters (https://github.com/scikit-learn-contrib/hdbscan).
 
 ![UMAP_HDBSCAN_CELLS2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/ccab3478-0ad0-4d50-9b80-f754a08a884b)
