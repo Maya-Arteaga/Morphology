@@ -84,7 +84,7 @@ CNEURO SS: Treatment in a control group
 
 Spatial Visualization
 
-As each data point corresponds to a cell, following Dimensionality Reduction and Clustering, each cell was color-coded based on its cluster. This approach serves two main purposes: 1)It facilitates the confirmation of similarities among cells belonging to the same cluster in a practical manner; 2) It provides information about the spatial distribution of each clustered cell. This aspect could be particularly beneficial for conducting further spatial analyses while considering other structures, potentially unveiling previously unexplored patterns in the physiopathology of diseases. Four photomicrographs were combined to illustrate the points mentioned above.
+As each data point corresponds to a cell, following Dimensionality Reduction and Clustering, each cell was color-coded based on its cluster. This approach serves two main purposes: 1) It facilitates the confirmation of similarities among cells belonging to the same cluster in a practical manner; 2) It provides information about the spatial distribution of each clustered cell. This aspect could be particularly beneficial for conducting further spatial analyses while considering other structures, potentially unveiling previously unexplored patterns in the physiopathology of diseases. Four photomicrographs were combined to illustrate the points mentioned above.
 
 
 
