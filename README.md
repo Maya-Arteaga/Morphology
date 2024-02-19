@@ -1,4 +1,4 @@
-                                              Morphometrics
+                                              MorphoGlia: a tool for microglia morphology classification
 ![Figure2](https://github.com/Maya-Arteaga/Morphology/assets/70504322/c498a759-7cff-4317-ba91-7fa1a8c1521f)
 
 Introduction 
