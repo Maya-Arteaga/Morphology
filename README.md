@@ -41,9 +41,9 @@ Dimensionality Reduction
 Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction technique designed for general non-linear and non-parametric dimensionality reduction while preserving both local and global structures. The algorithm operates under the assumption that the data is uniformly distributed on a Riemannian manifold, where the Riemannian metric remains locally constant and the manifold maintains local connectivity. Note that various hyperparameters (n_neighbors and min_dist) were experimented with, and yet the resulting structure remained robust. (https://github.com/lmcinnes/umap/).
 
 
+![UMAP_trials](https://github.com/Maya-Arteaga/Morphology/assets/70504322/99d4fcdb-0df3-4339-b2a5-c69c62780d59)
 
 
-![Figure_UMAP_trials](https://github.com/Maya-Arteaga/Morphology/assets/70504322/4dac335a-7a1a-4fbc-804b-950ec96b4eb9)
 
 
 Clustering
