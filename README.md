@@ -100,8 +100,8 @@ Statistical Test
 The Chi-square test was performed to investigate the relationship between the six clusters generated and their association with the five study groups. The observed frequency table and the table of standardized residuals are presented. The predominance of clusters 1 and 2 in the diseased group is noted, as well as the absence of groups 4 and 5. In the treated groups, there is a predominance of cluster 4, and clusters 0, 1, and 2 return to values similar to the control group.
 
 
-![Chi](https://github.com/Maya-Arteaga/Morphology/assets/70504322/0868e7af-ae3f-40a4-8169-926d972c8b14)
 
+![Chi_R](https://github.com/Maya-Arteaga/Morphology/assets/70504322/6dd545d7-2da9-4c23-81cd-fe748a822eb3)
 
 
 
