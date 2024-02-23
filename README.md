@@ -29,8 +29,8 @@ Feature Selection
 Each cell was first identified in the complete binary photomicrographs, after which classic morphometric features were computed. Skeleton analysis involved measuring the total length of branches (in pixels), counting the number of initial points (also referred to as cell processes emerging from the cell soma), determining the number of junction points (where branches subdivide), and counting the number of endpoints (endpoints of branches). Cell body analysis encompassed calculating the area, perimeter, circularity (where 1 represents a perfect circle), Feret diameter (maximum calliper diameter), compactness (how closely an object packs its area), aspect ratio (width/height), orientation (angle in degrees), and eccentricity (major axis/minor axis). These same features were computed for the entire cell obtained from the image. Fractal analysis involved determining convex hulls (the smallest convex set of pixels enclosing a cell), employing the same calculations as in cell body analysis. Sholl analysis consisted of identifying the number of Sholl circles (circles with increasing radii created around the centroid of the cell soma), counting crossing processes (intersections of cell processes with Sholl circles), and measuring the max distance (maximum distance between the centroid and the four vertices of the image).
 
 
-![Figure_RFE](https://github.com/Maya-Arteaga/Morphology/assets/70504322/c50ff3f4-bd54-42e9-b8a5-cdf13ba0bafe)
 
+![Corr_Heatmap](https://github.com/Maya-Arteaga/Morphology/assets/70504322/077fd44e-ac1c-403f-a454-29a9ad7e8c60)
 
 
 
