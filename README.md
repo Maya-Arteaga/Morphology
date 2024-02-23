@@ -69,6 +69,22 @@ CNEURO SS: Treatment in a control group
 ![Figure_pie_chart](https://github.com/Maya-Arteaga/Morphology/assets/70504322/5641aba8-031c-49ac-8915-a2a0c6e28c61)
 
 
+
+
+
+
+UMAP projection classified into groups: VEH SS, ESC, CNEURO 0.1, CNEURO 1.0, and CNEURO SS
+
+
+
+![UMAP_grupos](https://github.com/Maya-Arteaga/Morphology/assets/70504322/528b9005-be7b-45af-951c-9cae083036c2)
+
+
+
+
+
+
+
 Spatial Visualization
 
 After performing Dimensionality Reduction and Clustering, each cell was color-coded based on its cluster since each data point represents a cell. This approach serves two main purposes: 1) It simplifies the confirmation of similarities among cells belonging to the same cluster in a practical manner; 2) It offers insights into the spatial distribution of each clustered cell. This aspect could prove especially useful for conducting further spatial analyses, considering other structures, and potentially revealing previously unexplored patterns in the physiopathology of diseases.
