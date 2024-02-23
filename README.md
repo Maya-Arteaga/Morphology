@@ -30,7 +30,8 @@ Each cell was first identified in the complete binary photomicrographs, after wh
 
 
 
-![Corr_Heatmap](https://github.com/Maya-Arteaga/Morphology/assets/70504322/077fd44e-ac1c-403f-a454-29a9ad7e8c60)
+![Corr_Heatmap](https://github.com/Maya-Arteaga/Morphology/assets/70504322/d2b59693-e12c-4c91-9996-d4efb266614b)
+
 
 
 
