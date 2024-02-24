@@ -103,7 +103,13 @@ The Chi-square test was performed to investigate the relationship between the si
 
 ![Chi_R](https://github.com/Maya-Arteaga/Morphology/assets/70504322/6dd545d7-2da9-4c23-81cd-fe748a822eb3)
 
+The standardized residuals from the chi-square test reveal important deviations between observed and expected frequencies across clusters and groups in our dataset.
 
+For instance, cluster 1 shows a notable underrepresentation (-3.064) of the "VEH_SS" group, suggesting fewer observations than expected. Conversely, cluster 1 overrepresents the "VEH_ESC" group (2.824), indicating a higher-than-expected frequency.
+
+In cluster 4, the "CNEURO1_SS" group exhibits a significant overrepresentation (2.163), indicating a concentration of observations within this cluster.
+
+These findings highlight distinct associations and disparities between clusters and groups, providing valuable insights into the dataset's structure and composition.
 
 
 Juan Pablo Maya Arteaga
