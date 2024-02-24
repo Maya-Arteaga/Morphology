@@ -105,9 +105,9 @@ The Chi-square test was performed to investigate the relationship between the si
 
 The standardized residuals from the chi-square test reveal important deviations between observed and expected frequencies across clusters and groups in our dataset.
 
-For instance, cluster 1 shows a notable underrepresentation (-3.064) of the "VEH_SS" group, suggesting fewer observations than expected. Conversely, cluster 1 overrepresents the "VEH_ESC" group (2.824), indicating a higher-than-expected frequency.
+For instance, cluster 1 shows a notable underrepresentation (-3.064) of the VEH_SS group, suggesting fewer observations than expected. Conversely, cluster 1 overrepresents the VEH_ESC group (2.824), indicating a higher-than-expected frequency.
 
-In cluster 4, the "CNEURO1_SS" group exhibits a significant overrepresentation (2.163), indicating a concentration of observations within this cluster.
+In cluster 4, the CNEURO1_SS group exhibits a significant overrepresentation (2.163), indicating a concentration of observations within this cluster. In contrast, cluster 4 demonstrates a significant underrepresentation of the VEH_ESC group, indicated by a standardized residual of -3.06.
 
 These findings highlight distinct associations and disparities between clusters and groups, providing valuable insights into the dataset's structure and composition.
 
